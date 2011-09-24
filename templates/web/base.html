@@ -24,19 +24,18 @@
             <!-- BEGIN menu --> 
             <div id="menu"> 
                 <ul> 
-                    <li id="active"><a href="#">Home</a></li> 
-                    <li><a href="news.html">News</a></li> 
-                    <li><a href="members.html">Mitglieder</a></li> 
-                    <li><a href="sponsors.html">Sponsoren</a></li> 
-                    <li><a href="contact.html">Kontakt</a></li> 
-                    <li><a href="impressum.html">Impressum</a></li> 
+                    <li><a href="/">News</a></li> 
+                    <li><a href="members/">Mitglieder</a></li> 
+                    <li><a href="sponsors/">Sponsoren</a></li> 
+                    <li><a href="contact/">Kontakt</a></li> 
+                    <li><a href="imprint/">Impressum</a></li> 
                 </ul> 
             </div> 
             <!-- END menu --> 
 
             <!-- BEGIN MainContent --> 
             <div class="container"> 
-
+              {% block content %}<p>no content</p>{% endblock %}
             </div> 
             <!-- END MainContent --> 
         </div> 
