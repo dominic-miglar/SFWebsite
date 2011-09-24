@@ -21,4 +21,7 @@ def sponsors(request):
     return render_to_response('web/child_sponsors.html', {'sponsorList': sponsorList})
 
 def imprint(request):
-    return render_tp_response('web/child_imprint.html')
+    return render_to_response('web/child_imprint.html')
+
+def contact(request):
+    return render_to_response('web/child_contact.html')

@@ -17,3 +17,5 @@ urlpatterns = patterns('',
     #url(r'^/$', include('web.urls', namespace='web')),
     url(r'^admin/', include(admin.site.urls)),
 )
+
+urlpatterns += staticfiles_urlpatterns()
