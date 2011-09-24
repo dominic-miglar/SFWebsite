@@ -24,11 +24,11 @@
             <!-- BEGIN menu --> 
             <div id="menu"> 
                 <ul> 
-                    <li><a href="/">News</a></li> 
-                    <li><a href="members/">Mitglieder</a></li> 
-                    <li><a href="sponsors/">Sponsoren</a></li> 
-                    <li><a href="contact/">Kontakt</a></li> 
-                    <li><a href="imprint/">Impressum</a></li> 
+                    <li><a href="{% url web:news %}">News</a></li> 
+                    <li><a href="{% url web:members %}">Mitglieder</a></li> 
+                    <li><a href="{% url web:sponsors %}">Sponsoren</a></li> 
+                    <li><a href="{% url web:contact %}">Kontakt</a></li> 
+                    <li><a href="{% url web:imprint %}">Impressum</a></li> 
                 </ul> 
             </div> 
             <!-- END menu --> 
