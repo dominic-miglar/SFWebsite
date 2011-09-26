@@ -1,5 +1,7 @@
 from django.db import models
 import datetime
+#from tinymce.widgets import TinyMCE
+from tinymce import models as tinymce_models
 
 
 # Create your models here.
@@ -23,8 +25,8 @@ class Car(models.Model):
     photoPath = models.ImageField("Foto", upload_to='images/photos/cars')
     horsePower = models.IntegerField("PS") 
     cylinderCapacity = models.FloatField("Hubraum (Liter)")
-    otherInfos = models.TextField("Sonstige Informationen")
-   
+    otherInfos = models.TextField("Sonstige Informationen")    
+
     def __unicode__(self):
         return '%s %s' % (self.brand, self.model)
 
@@ -34,6 +36,8 @@ class Newsarticle(models.Model):
     pub_date = models.DateTimeField("Publi- zierungs- datum")     #auto_now_add=True)
     header = models.CharField("Ueberschrift", max_length=200)
     body = models.TextField("Text") # fuer das waere tinymce geil :D
+    #body = tinymce_models.HTMLField()
+
 
     def __unicode__(self):
         return self.title

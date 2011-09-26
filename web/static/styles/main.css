@@ -1,0 +1,147 @@
+/*
+ * main.css
+ * Streetfighters Cascading Style Sheet v1.0a
+ * Copyright 2011 by Dominic Miglar
+ * E-Mail: admin@wlanfd24.org
+ */
+ 
+body {
+    margin: 0;
+    padding: 0;
+    color: #9F9F9F;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background: url(../images/main/stripes.png);
+    }
+
+a {
+    color: #FFF;
+    }
+
+#board {
+    margin: 15px; 
+    margin-top: 25px;
+    padding: 10px;
+    border: 1px solid #3B3B3B;
+    border-radius: 10px;
+    background: #000;
+    }
+
+#header {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    }
+    #header h1 {
+        margin: 0; 
+        padding: 0;
+        }
+    #header img {
+        text-align: center;
+        }
+
+   
+.container { 
+    margin-left: 220px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #3B3B3B;
+    border-radius: 10px;
+    background-color: #1A1A1A;
+    }   
+        .content {
+            margin-left: 20px;
+            margin-top: 20px;
+            }
+        .contentHeader {
+            padding: 5px;
+            border: 1px solid #fff;
+            }
+        .contentHeader p {
+            padding: 0;
+            margin: 0;
+            } 
+        .contentCategory {
+            font-weight: bold; 
+            letter-spacing: 1px;
+            }
+        .contentTitle {
+            color: #fff;
+            }
+        span.contentDate {
+            color: #fff;
+            float: right;
+            }
+             
+    
+      
+#menu {
+    float: left;
+    margin-top: 10px;
+    }
+    #menu ul {
+        list-style-type: square;
+        }
+    #menu li {
+        width: 125px;
+        margin-top: 6px;
+        padding: 2px;
+        background-color: #1A1A1A;
+        border: 1px solid #3B3B3B;
+        letter-spacing: 2px;
+        }
+    #menu li a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        }
+    #menu li:hover {
+        border-color: #00CCFF;
+        }
+    #menu li a:hover {
+        font-weight: bold;
+        color: #00CCFF;
+        }
+    #active {
+        color: #00CCFF;
+        }
+        
+   
+   
+#footer {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    border-top: 1px solid #3B3B3B;
+    border-bottom: 1px solid #3B3B3B;
+    background-color: #1A1A1A;
+    padding: 10px;
+    text-align: right;
+    height: 50px;
+    }
+    #footer p { 
+        font-size: 12px;
+        margin-top: 0;
+        margin-bottom: 5px;
+        }
+    #footer p a { 
+        color: #fff;
+        }
+    #copyright {
+        margin: 0; padding: 0;
+        text-align: left;
+        float: left;
+        }
+        
+        
+        
+/* adding some new options from the old <style> block of the htmls */
+
+
+    
+    #karte {
+	    float: right;   
+    }
+    
+    

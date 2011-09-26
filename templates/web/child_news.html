@@ -1,4 +1,19 @@
 {% extends "web/base.html" %}
 
+{% block content %}
+    {% for newsarticle in newsList %}
+        <div class="contentHeader"> 
+            <p> 
+                <span class="contentCategory">News</span> 
+                -     
+                <span class="contentTitle">{{ newsarticle.title }}</span> 
+                <span class="contentDate">{{ newsarticle.pub_date }}</span> 
+            </p> 
+        </div>
 
+        <div class="content"> 
+            {{ newsarticle.body|safe }}
+        </div>
+    {% endfor %}
+{% endblock %}
 
