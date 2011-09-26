@@ -1,2 +1,14 @@
 {% extends "web/base.html" %}
 
+{% block content %}
+    {% for sponsor in sponsorList %}
+        <h2>{{ sponsor.name }}</h2>
+        <a href="{{ sponsor.website }}"><img src="{{ MEDIA_URL }}{{ sponsor.banner }}" /></a>
+        <p>
+            <b>Sponsored:</b><br />{{ sponsor.sponsored }}
+        </p>
+        <p>{{ sponsor.descr }}</p>
+        <pre>{{ sponsor.otherInfos }}</pre>        
+    {% endfor %}
+{% endblock %}
+
