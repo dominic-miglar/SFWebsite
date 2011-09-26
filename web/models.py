@@ -1,7 +1,5 @@
 from django.db import models
 import datetime
-#from tinymce.widgets import TinyMCE
-from tinymce import models as tinymce_models
 
 
 # Create your models here.
@@ -36,8 +34,6 @@ class Newsarticle(models.Model):
     pub_date = models.DateTimeField("Publi- zierungs- datum")     #auto_now_add=True)
     header = models.CharField("Ueberschrift", max_length=200)
     body = models.TextField("Text") # fuer das waere tinymce geil :D
-    #body = tinymce_models.HTMLField()
-
 
     def __unicode__(self):
         return self.title
