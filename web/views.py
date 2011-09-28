@@ -13,7 +13,9 @@ def members(request):
 
 def memberDetail(request, member_id):
     member = get_object_or_404(Member, pk=member_id)
-    return render_to_response('web/child_members_detail.html', {'member': member}, context_instance=RequestContext(request))
+    if member:
+        carList = member.car_set.all()
+    return render_to_response('web/child_members_detail.html', {'member': member, 'carList': carList}, context_instance=RequestContext(request))
 
 def sponsors(request):
     sponsorList = Sponsor.objects.all()

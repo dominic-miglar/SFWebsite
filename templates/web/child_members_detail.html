@@ -1,2 +1,48 @@
 {% extends "web/base.html" %}
 
+{% block content %}
+
+    <img src="{{ member.photoPath }}" />
+    <table style="width: 400px;">
+        <tr>
+            <td><b>Name:</b></td>
+            <td>{{ member.firstName }} {{ member.lastName }}</td>
+        </tr>
+        <tr>
+            <td><b>Beruf:</b></td>
+            <td>{{ member.job }}</td>
+        </tr>
+        <tr>
+            <td><b>E-Mail:</b></td>
+            <td><a href="mailto:{{ member.email }}">{{ member.email }}</a></td>
+        </tr>
+    </table>
+    {% if carList %}
+        <h3>Fahrzeuge:</h3>
+        {% for car in carList %}
+            <div class="car">
+                <img src="{{ car.photoPath }}" />
+                <table style="width: 300px;">
+                    <tr>
+                        <td><b>Hersteller:</b></td>
+                        <td>{{ car.brand }}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Modell:</b></td>
+                        <td>{{ car.model }}</td>
+                    </tr>
+                    <tr>
+                        <td><b>PS:</b></td>
+                        <td>{{ car.horsePower }}</td>   
+                    </tr>
+                    <tr>
+                        <td><b>Hubraum:</b></td>
+                        <td>{{ car.cylinderCapacity }} Liter</td>
+                    </tr>
+                </table>
+                <p><b>Sonstiges:</b><br />{{ car.otherInfos }}</p>  
+            </div>  
+        {% endfor %}
+    {% endif %}
+{% endblock %}
+
