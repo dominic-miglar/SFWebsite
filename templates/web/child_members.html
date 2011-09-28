@@ -1,10 +1,13 @@
 {% extends "web/base.html" %}
 
-{% for member in memberList %}
-    <a href="{% url web:memberdetail member.id %}">
-        <img src="{{ MEDIA_URL }}{{ member.photoPath }}" />
-    </a> 
-{% endfor %}
+{% block content %}
+
+    {% for member in memberList %}
+        <a href="{% url web:memberdetails member_id=member.id %}">
+            <img class="members" src="{{ MEDIA_URL }}{{ member.photoPath }}" />
+        </a>
+    {% endfor %}
+{% endblock %}
 
 
 

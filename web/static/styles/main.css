@@ -144,4 +144,6 @@ a {
 	    float: right;   
     }
     
-    
+div.members {
+    padding: 30px;
+}
