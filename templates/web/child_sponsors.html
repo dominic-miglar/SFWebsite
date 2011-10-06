@@ -3,7 +3,7 @@
 {% block content %}
     {% for sponsor in sponsorList %}
         <h2>{{ sponsor.name }}</h2>
-        <a href="{{ sponsor.website }}"><img src="{{ MEDIA_URL }}{{ sponsor.banner }}" /></a>
+        <a href="{{ sponsor.website }}"><img src="{{ sponsor.banner.url }}" /></a>
         <p>
             <b>Sponsored:</b><br />{{ sponsor.sponsored }}
         </p>

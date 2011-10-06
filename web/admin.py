@@ -12,7 +12,7 @@ class CarInline(admin.TabularInline):
 class MemberAdmin(admin.ModelAdmin):
     fieldsets = [
         (None,                  {'fields': [('firstName', 'lastName'), 'job', 'email']}),
-        ('Foto', {'fields': ['photoPath']}),
+        ('Foto', {'fields': ['photo']}),
     ]
     inlines = [CarInline]
 

@@ -4,7 +4,7 @@
 
     {% for member in memberList %}
         <a href="{% url web:memberdetails member_id=member.id %}">
-            <img class="members" src="{{ MEDIA_URL }}{{ member.photoPath }}" />
+            <img class="members" src="{{ member.photo.thumbnail.url }}" />
         </a>
     {% endfor %}
 {% endblock %}

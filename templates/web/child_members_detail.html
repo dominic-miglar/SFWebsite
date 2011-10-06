@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <img src="{{ MEDIA_URL }}{{ member.photoPath }}" />
+    <img src="{{ member.photo.url }}" />
     <table style="width: 400px;">
         <tr>
             <td><b>Name:</b></td>
@@ -21,7 +21,7 @@
         <h3>Fahrzeuge:</h3>
         {% for car in carList %}
             <div class="car">
-                <img src="{{ MEDIA_URL}}{{ car.photoPath }}" />
+                <img src="{{ car.photo.url }}" />
                 <table style="width: 300px;">
                     <tr>
                         <td><b>Hersteller:</b></td>

@@ -120,6 +120,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'streetfighters',
     'streetfighters.web',
+    'streetfighters.stdimage',
     #####'tinymce',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
