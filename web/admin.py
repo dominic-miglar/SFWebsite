@@ -1,5 +1,5 @@
 from django.contrib import admin
-from web.models import Newsarticle, Member, Car, Sponsor
+from streetfighters.web.models import *
 
 
 

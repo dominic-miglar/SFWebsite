@@ -1,7 +1,7 @@
 # Create your views here.
 
 from django.shortcuts import render_to_response, get_object_or_404, RequestContext
-from web.models import Newsarticle, Member, Car, Sponsor
+from streetfighters.web.models import Newsarticle, Member, Car, Sponsor
 
 def news(request):
     newsList = Newsarticle.objects.all()
